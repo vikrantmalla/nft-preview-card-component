@@ -1,0 +1,18 @@
+    /*Primary */
+    
+    $colorSoftblue: hsl(215, 51%, 70%);
+    $colorCyan: hsl(178, 100%, 50%);
+    /*Neutral */
+    
+    $colorVerydarkblue: hsl(217, 54%, 11%);
+    $colordarkblueCard: hsl(216, 50%, 16%);
+    $colordarkblueLine: hsl(215, 32%, 27%);
+    $colorWhite: hsl(0, 0%, 100%);
+    /*mixin */
+    
+    @mixin flex($direction, $justify) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justify;
+        align-items: center;
+    }

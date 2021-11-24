@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/*Primary */
+/*Neutral */
+/*mixin */
+.cardContainer {
+  margin: 0 1.5rem;
+  background-color: #14253d;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 20rem;
+  -webkit-box-shadow: 0px 27px 3px 20px #0a172b;
+          box-shadow: 0px 27px 3px 20px #0a172b;
+}
+
+.cardContainer .cardImg {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.cardContainer .cardImg img {
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cardContainer .cardImg .overlayImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 255, 247, 0.5);
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.cardContainer .cardImg .overlayImg img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cardContainer .cardImg .overlayImg:hover {
+  opacity: 1;
+}
+
+.cardContainer .cardDetails .cardHeading {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.cardContainer .cardDetails .cardDesc {
+  font-size: 1rem;
+  color: #8bacda;
+  line-height: 1.5rem;
+  margin-right: .5rem;
+  margin-bottom: 1.4rem;
+}
+
+.cardContainer .cardStats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cardContainer .cardStats .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.cardContainer .cardStats .price p {
+  color: #00fff7;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cardContainer .cardStats .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.cardContainer .cardStats .time p {
+  color: #8bacda;
+  font-size: 1rem;
+}
+
+.cardContainer .cardCreator {
+  position: relative;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .8rem;
+}
+
+.cardContainer .cardCreator img {
+  width: 2rem;
+  border: 0.1rem solid white;
+  border-radius: 50%;
+}
+
+.cardContainer .cardCreator p {
+  color: #8bacda;
+  font-size: 1rem;
+}
+
+.cardContainer .cardCreator p span {
+  color: white;
+}
+
+.cardContainer .cardCreator::before {
+  position: absolute;
+  content: '';
+  background: #8bacda;
+  width: 100%;
+  height: 1px;
+  top: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #0d192b;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
